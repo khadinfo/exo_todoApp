@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import style from './style-component.module.css'
+import style from './style-module/style-component.module.css'
 
 const Welcome =function(props){
     const {nom,age}=props;
@@ -11,11 +11,11 @@ const Welcome =function(props){
     )
 }
 
-ElementStyle.defaultProps={
+Welcome.defaultProps={
     age:18
 }
 
-ElementStyle.prototype={
+Welcome.prototype={
     age: PropTypes.number,
     nom: PropTypes.string
 }

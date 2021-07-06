@@ -5,7 +5,7 @@ import Welcome from './component/welcome/welcome';
 function App() {
   return (
     <div className="App">
-      <Welcome name="khadija" age={31}/>
+      <Welcome nom="khadija" age={31}/>
     </div>
   );
 }
