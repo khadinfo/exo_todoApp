@@ -20,9 +20,8 @@ function App() {
       name: 'Chak',
       prenom:'Lina',
       sexe: 'F',
-      option:'Medecine',
-      resultat:80
-
+      option:'Medecine'
+  
     },
     { id: nanoid(),
       name:'Einstein',

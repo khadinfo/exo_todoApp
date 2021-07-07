@@ -7,6 +7,8 @@ const EtudiantTableItem = (props) => {
     let colorResultat;
     if(resultat<50){
     colorResultat=style.echec;
+    }else if(resultat===null){
+    colorResultat=style.notResult;
     }
     return (
         <tr>
