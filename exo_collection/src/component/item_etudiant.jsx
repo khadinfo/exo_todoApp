@@ -1,20 +1,20 @@
 import PropTypes from 'prop-types';
 
-import style from './style-module/style-etudiant.module.css';
+import style from './style-etudiant/style-etudiant.module.css'
 
 const EtudiantTableItem = (props) => {
     const {name, prenom,option,sexe,resultat} = props;
     let colorResultat;
     if(resultat<50){
-    colorResultat="<td className={style.echec}>{resultat}/100</td>";
+    colorResultat=style.echec;
     }
     return (
         <tr>
             <td>{name}</td>
             <td>{prenom} </td>
             <td>{option}</td>
-            <td>{sexe}</td> +
-             {colorResultat}
+            <td>{sexe}</td>
+            <td className={colorResultat}>{resultat}</td>
         </tr>
     )
 }
